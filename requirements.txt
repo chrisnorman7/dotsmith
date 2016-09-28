@@ -1,0 +1,5 @@
+#pip install -U --trusted-host wxpython.org --pre -f http://wxpython.org/Phoenix/snapshot-builds/ wxPython_Phoenix
+jinja2
+git+https://github.com/chrisnorman7/liblouis.git#egg=louis
+git+https://github.com/chrisnorman7/simpleconf.git
+git+https://github.com/chrisnorman7/default_argparse.git
