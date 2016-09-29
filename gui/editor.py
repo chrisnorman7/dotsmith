@@ -21,11 +21,15 @@ class EditorFrame(wx.Frame):
   self.Bind(wx.EVT_CLOSE, self.on_close)
   self.SetMenuBar(MenuBar(self))
  
+ def set_text(self, text):
+  """Set the text of this editor."""
+  self.entry.SetValue(text)
+ 
  def load_file(self, filename):
   """Load a file into this editor."""
   try:
    with open(filename, 'r') as f:
-    self.entry.SetValue(f.read())
+    self.set_text(f.read())
    self.filename = filename
   except Exception as e:
    do_error(e, 'Error Loading %s' % filename)

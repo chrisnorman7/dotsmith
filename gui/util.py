@@ -18,7 +18,4 @@ def create_editor(filename = None):
  application.editors.append(editor)
  return editor
 
-def translate(text):
- """Translate text to braille and load the results into a new tab."""
- 
 from .editor import EditorFrame
